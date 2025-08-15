@@ -7,8 +7,6 @@ import axios, { AxiosRequestConfig } from "axios";
 const tmdb = 'https://api.themoviedb.org/3';
 const tmdbKey = import.meta.env.VITE_TMDB_KEY;
 
-console.log(tmdbKey,"api key log")
-
 const axiosClient = axios.create({ baseURL: tmdb });
 
 axiosClient.interceptors.request.use((config) => {
